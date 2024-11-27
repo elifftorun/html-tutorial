@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Örneği</title>
+</head>
+<body>
+       <h1>fieldset ve select kullanımı</h1>
+       <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+       <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+        <label for="isim">İsim</label>
+        <input type="text"name="isim"id="isim"placeholder="Ad"><br><br>
+
+        <label for="soyad">Soyad</label>
+        <input type="text"name="soyad"id="soyad"placeholder="Soyad"><br><br>
+        
+        <input type="radio"name="cinsiyet"id="kiz">
+        <label for="kiz">Kız</label>
+
+        <input type="radio"name="cinsiyet"id="erkek">
+        <label for="erkek">Erkek</label>
+
+        <label for="tarih">Doğum Tarihi</label>
+        <input type="date"name="tarih"id="tarih"value="2020-01-01">
+        <br><br>
+    </fieldset>
+    <fieldset>
+       <legend>Eğitim Bilgileri</legend>
+
+       <label for="okul">Okul</label>
+       <input type="text"id="okul"name="okul"><br><br>
+
+       <label for="sinif">Sınıf</label>
+       <input type="text" id="sinif" name="sinif"><br><br>
+
+       <label for="bolum">Bölünümünüz</label>
+       <select name="bolum" id="bolum"><br><br>
+       <option value="1">Bilişim Tekolojileri</option>
+       <option value="2">Çocuk Gelişim</option>
+       <option value="3">Moda Tasarım</option>
+       <option value="4">Grafik Tasarım</option>
+       </select>
+       <br>
+       <label for="onay">Çerezleri Kabul Et</label>
+       <input type="checkbox" name="onay" id="onay"><br><br>
+       <br>
+       <button type="submit">Kaydet</button>
+       </fieldset>
+       <fieldset>
+        <legend>Ek Bilgiler</legend><!--textarea birden fazla satırda bilgi girişi için kullanır cols:bir satırda-->
+        <textarea name="not" id="not" cols="50"rows="5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident modi suscipit incidunt dicta quae! Voluptas consectetur nisi quas tenetur, quod quos, placeat officia ex quisquam exercitationem odio necessitatibus rerum? Voluptatem.</textarea>
+        <br>
+        <button type="submit">Kaydet</button>
+    </fieldset>
+    
+</body>
+</html>
