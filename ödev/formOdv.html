@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio ve Checkbox</title>
+</head>
+
+<body>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <fieldset>
+            <legend>Cinsiyet</legend>
+            <label for="ckiz">KIZ</label>
+            <input type="radio" id="cinsiyet" name="ckiz" value="1"><br><br>
+
+            <label for="cerkek">ERKEK</label>
+            <input type="radio" id="cinsiyet" name="cerkek" value="2"><br><br>
+
+            <button type="submit">KAYDET</button>
+        </fieldset><br>
+        <hr>
+
+        <h1>Kampanyalar</h1>
+        <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+            <fieldset>
+                <legend>Hangi ürünlerde %90 indirim olsun.</legend>
+                <label for="kamp1">Makyaj Malzemeleri</label>
+                <input type="radio" name="kampanya" id="kamp1" value="Makyaj"><br><br>
+
+                <label for="kamp2">Cilt Bakım Ürünleri</label>
+                <input type="radio" name="kampanya" id="kamp2" value="Cilt Bakım"><br><br>
+
+                <label for="kamp3">Parfüm Ürünleri</label>
+                <input type="radio" name="kampanya" id="kamp3" value="Parfüm "><br><br>
+
+
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Hangi makyaj ürünlerini tercih ediyorsunuz.</legend>
+                <input type="checkbox" name="urun[]" id="urun1" value="Allık">
+                <label for="urun1">Allık</label><br>
+
+                <input type="checkbox" name="urun[]" id="urun2" value="Far">
+                <label for="urun2">Far</label><br>
+
+
+                <input type="checkbox" name="urun[]" id="urun3" value="Kapatıcı">
+                <label for="urun3">Kapatıcı</label><br>
+
+                <input type="checkbox" name="urun[]" id="urun4" value="Oje">
+                <label for="urun4">Oje</label><br>
+            </fieldset>
+            <fieldset>
+                <legend for="yas">YAŞINIZ</legend>
+                <input type="radio" name="yas" id="yas1" value="18'Altı"> 
+                <label for="yas">18'Altı</label><br>
+                <input type="radio" name="yas" id="yas2" value="18'Üstü"> 
+                <label for="yas">18'Üstü</label>
+
+            </fieldset>
+            <br>
+            <button type="submit">Kaydet</button>
+            <button type="reset">Temizle</button>
+
+        </form>
+</body>
+
+</html>
